@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="info_value_low">#ffff0200</color>
+    <color name="info_value_high">#ff00eaff</color>
+    <color name="local_white">#ffffffff</color>
+    <color name="mode_selected_color">#87ceeb</color>
+    <color name="mode_nomal_color">#ffffffff</color>
+    <color name="mode_back_color">#ff000000</color>
+    <color name="mode_gray_color">#ffcccccc</color>
+    <color name="dx_value_mid_grey">#ffb1b1b1</color>
+    <color name="status_on_color">#ff00eaff</color>
+    <color name="save_power_summary_title_color_red">#ffcb4b42</color>
+    <color name="save_power_summary_color_green">#ff67e440</color>
+    <color name="save_power_summary_color_grey">#ff5c5c5d</color>
+    <color name="widget_time_title_color">#89bacf</color>
+    <color name="widget_mode_text_black_color">#ff000000</color>
+    <color name="widget_mode_text_white_color">#ffffff</color>
+    <color name="float_tips_color_red">#ffff9446</color>
+    <color name="health_charging_process_green_color">#ff38dae5</color>
+    <color name="health_charging_process_grey_color">#ffa4a4a4</color>
+    <color name="transparent_background">#00000000</color>
+</resources>

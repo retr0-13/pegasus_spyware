@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/relative" android:background="@drawable/gui_listselector" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_Icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linear" android:paddingLeft="5dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_toRightOf="@+id/iv_Icon">
+        <TextView android:textSize="18dp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@+id/tv_FileName" android:paddingRight="25dp" android:layout_width="250dp" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="10dp" android:textColor="#ff7a7a7a" android:gravity="center_vertical" android:id="@+id/tv_FileSize" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/cb_file" android:focusable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/gui_checkbox_click_selector" android:layout_alignParentRight="true"/>
+</RelativeLayout>

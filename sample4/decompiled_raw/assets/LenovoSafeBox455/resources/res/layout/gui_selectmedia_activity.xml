@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:id="@+id/info_bar" android:background="@drawable/gui_info_bar" android:layout_width="match_parent" android:layout_height="24dp"/>
+    <RelativeLayout android:orientation="vertical" android:background="#eeeeee" style="@style/NavPage">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_relative" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_btninsert" android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:id="@+id/layout_second" android:background="#eeeeee" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="68dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:textSize="20dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_selectAll" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="136dp" android:layout_height="36dp" android:text="@string/selectAll" android:drawableLeft="@drawable/select_all_icon" android:drawablePadding="0dp" android:layout_weight="1"/>
+                <ImageView android:background="#eeeeee" android:layout_width="17dp" android:layout_height="wrap_content"/>
+                <Button android:textSize="20dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_import" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="136dp" android:layout_height="36dp" android:text="@string/encrypt" android:drawableLeft="@drawable/encrypt_icon" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_gridview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_btninsert" android:layout_below="@+id/layout_relative">
+            <GridView android:gravity="center" android:id="@+id/gridview" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="7dp" android:verticalSpacing="10dp" android:stretchMode="columnWidth" android:columnWidth="95dp" android:numColumns="3"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

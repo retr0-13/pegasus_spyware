@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:id="@+id/info_bar" android:background="@drawable/gui_info_bar" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/select_file"/>
+    <RelativeLayout style="@style/NavPage">
+        <RelativeLayout android:id="@+id/layout_temp_tittle" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/list_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="15dp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/tv_Path" android:paddingRight="5dp" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_alignParentLeft="true"/>
+                <ImageView android:id="@+id/tv_Path_image" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:src="@drawable/tv_path_image" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_temp" android:background="@drawable/gui_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:id="@+id/layout_second" android:background="#eeeeee" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="68dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:textSize="20dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_selectAll" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="136dp" android:layout_height="36dp" android:text="@string/selectAll" android:drawableLeft="@drawable/select_all_icon" android:drawablePadding="0dp" android:layout_weight="1"/>
+                <ImageView android:background="#eeeeee" android:layout_width="17dp" android:layout_height="wrap_content"/>
+                <Button android:textSize="20dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_import" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="136dp" android:layout_height="36dp" android:text="@string/encrypt" android:drawableLeft="@drawable/encrypt_icon" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/layout_temp" android:layout_below="@+id/layout_temp_tittle">
+            <ListView android:id="@+id/lv_temp" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="1px"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

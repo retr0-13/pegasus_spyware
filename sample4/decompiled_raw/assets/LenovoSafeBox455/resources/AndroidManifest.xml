@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:screenOrientation="portrait" android:versionCode="4030455" android:versionName="2.1.0455" package="com.lenovo.safebox">
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <application android:theme="@android:style/Theme.Light.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.lenovo.safebox.SafeBoxApplication" android:allowClearUserData="false">
+        <meta-data android:name="SUS_CHANNEL" android:value="self"/>
+        <receiver android:name="com.lenovo.safebox.PrivacySpaceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.lenovo.safebox.service.WatchAppService" android:process=":monitor">
+            <intent-filter>
+                <action android:name="com.lenovo.safebox.NO_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.lenovo.safebox.service.MonitorAppService" android:process=":watch">
+            <intent-filter>
+                <action android:name="com.lenovo.safebox.WATCH_APP_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".service.BootReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.lenovo.lps.sus.control.SUSPromptActivity"/>
+        <activity android:theme="@style/Dialog" android:name="com.lenovo.lps.sus.control.SUSCustdefNotificationActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.lenovo.lps.sus.control.SUSNotificationActivity"/>
+        <receiver android:name="com.lenovo.lps.sus.control.SUSReceiver">
+            <intent-filter>
+                <action android:name="com.lenovo.lps.sus.ACTION_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".PrivateSpaceActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:allowTaskReparenting="false" android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.lenovo.safecenter.LENOVO_SAFEBOX"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".AddAppActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:screenOrientation="portrait" android:allowTaskReparenting="false" android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.lenovo.safecenter.LENOVO_APPLOCK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".VisitControlActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:screenOrientation="portrait" android:allowTaskReparenting="false" android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.lenovo.safebox.VISIT_CONTROL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".LoginActivity" android:finishOnTaskLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name=".LockScreenActivity" android:taskAffinity="com.lenovo.safebox.secret" android:finishOnTaskLaunch="true" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".AddAutoImageActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".AddAutoVideoActivity" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".AddManualMediaActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".AddNormalFileActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".MediaBrowserActivity" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".ImageBrowserActivity" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".PrivateMediaActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <receiver android:name=".PrivacySpaceReceiver">
+                <intent-filter>
+                    <action android:name="com.lenovo.safe.UPDATE_PRI_MEDIA"/>
+                </intent-filter>
+            </receiver>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.lenovo.safebox.PrivateFileActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Dialog" android:name=".UpdateDialogActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

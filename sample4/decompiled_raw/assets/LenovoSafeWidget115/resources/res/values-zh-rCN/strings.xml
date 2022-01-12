@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">(4x1)一键清理</string>
+    <string name="widget_4X1">(4x1)一键清理</string>
+    <string name="mem_refresh">刷新</string>
+    <string name="mem_clear">一键清理</string>
+    <string name="leem_center">乐管家</string>
+    <string name="save_center">乐安全</string>
+    <string name="memory">内存占用</string>
+    <string name="toast_mem_no">没有需要清理的应用</string>
+    <string name="toast_mem_show">已经为您结束了%1$d个应用，共释放了%2$dMB内存</string>
+    <string name="no_lesafe_app">请下载乐安全</string>
+    <string name="ok_btn">确定</string>
+    <string name="cancel_btn">取消</string>
+    <string name="stop_lesafe_app">请在设置中重新启用乐安全</string>
+    <string name="if_download_lesafe">乐安全为您提供更全面的手机安全服务。您是否需要下载使用？</string>
+    <string name="app_no_app_to_clear">没有需要清理的应用</string>
+    <string name="app_is_fine">清理完成 已达最佳状态</string>
+    <string name="app_kill">已清理</string>
+    <string name="app_number">个应用</string>
+    <string name="is_in_clear">正在清理...</string>
+    <string name="no_browser">您的手机没有浏览器</string>
+</resources>

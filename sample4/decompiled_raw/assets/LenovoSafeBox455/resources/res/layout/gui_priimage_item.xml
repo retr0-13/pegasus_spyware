@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="24dp">
+    <FrameLayout android:id="@+id/clicklayout1" android:layout_width="97dp" android:layout_height="97dp">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/clicklayout" android:background="@drawable/gui_media_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/image" android:padding="5dp" android:layout_width="83dp" android:layout_height="83dp" android:src="@drawable/gui_load_small"/>
+        </FrameLayout>
+        <CheckBox android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/cb_image_item" android:focusable="false" android:layout_width="25dp" android:layout_height="25dp" android:checked="false" android:button="@drawable/gui_media_check_selector" android:layout_alignTop="@+id/clicklayout"/>
+    </FrameLayout>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/priimage_item_text" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="38dp" android:maxLines="2"/>
+</LinearLayout>

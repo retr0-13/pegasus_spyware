@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <ListView android:id="@+id/main_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#eeeeee" android:divider="@drawable/list_bottom_line"/>
+    <ImageView android:id="@+id/bottom_line" android:background="@drawable/list_bottom_line" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

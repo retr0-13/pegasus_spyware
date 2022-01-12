@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:minHeight="60dp">
+    <ImageView android:id="@+id/appitem_icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="5dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <LinearLayout android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/appitem_islock" android:layout_toRightOf="@+id/appitem_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="17sp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/appitem_name" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/appitem_islock" android:paddingRight="5dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/gui_app_unlock" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

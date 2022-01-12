@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_view" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/widget196" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+    <ListView android:id="@+id/selectapp_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#eeeeee" android:dividerHeight="2px" android:layout_below="@+id/info_bar"/>
+</RelativeLayout>

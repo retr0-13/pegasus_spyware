@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <LinearLayout android:id="@+id/antispam_mainlin2" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="5dp">
+        <LinearLayout android:gravity="center" android:id="@+id/unlock_tab" android:background="@drawable/gui_tab_select" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/unlock_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gui_unlock_pressed"/>
+            <TextView android:textSize="18dp" android:textColor="@color/text_blue" android:gravity="center" android:id="@+id/unlock_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/unlock_apps"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/locked_tab" android:background="@drawable/gui_tab_normal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/locked_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gui_locked_normal"/>
+            <TextView android:textSize="18dp" android:textColor="#4a4a4a" android:gravity="center" android:id="@+id/locked_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/locked_apps"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

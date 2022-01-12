@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/gui_checkbox_off"/>
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/gui_checkbox_on"/>
+    <item android:state_checked="true" android:drawable="@drawable/gui_checkbox_on"/>
+    <item android:drawable="@drawable/gui_checkbox_off"/>
+</selector>

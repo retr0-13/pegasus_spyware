@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:background="@drawable/dialog_title_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <ImageView android:id="@+id/icon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="9dp" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#000000" android:shadowDx="1" android:shadowDy="0" android:shadowRadius="1" android:layout_toRightOf="@+id/icon"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/dialog_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="16dp" android:id="@+id/message" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowColor="#ffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/splitline" android:background="@drawable/home_page_drawer_splitline_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/content"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_below="@+id/splitline">
+            <TextView android:id="@+id/negativeButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_weight="1" style="@style/NegativeButtonText"/>
+            <TextView android:id="@+id/neutralButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_weight="1" style="@style/NegativeButtonText"/>
+            <TextView android:id="@+id/positiveButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_weight="1" style="@style/ButtonText"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

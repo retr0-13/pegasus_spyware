@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/lockscreen_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="73dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/app_icon" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/icon"/>
+            <TextView android:textSize="17dp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/lockedscreen_tv" android:layout_width="wrap_content" android:layout_height="40dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button_bar" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true">
+            <RelativeLayout android:orientation="horizontal" android:background="@drawable/input_bg" android:layout_width="187dp" android:layout_height="36dp">
+                <EditText android:textSize="15dp" android:textColor="#454545" android:id="@+id/lockedscreen_pwd" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="36dp" android:hint="@string/input_le_pwd" android:cursorVisible="true" android:password="true" android:maxLength="6" android:phoneNumber="true" android:editable="false" android:layout_below="@+id/title_bar"/>
+                <Button android:id="@+id/num_del" android:background="@drawable/del_key" android:paddingRight="3dp" android:layout_width="33dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <Button android:textSize="20dp" android:textColor="#4a4a4a" android:id="@+id/lockedscreen_login" android:layout_width="70dp" android:layout_height="36dp" android:layout_marginLeft="10dp" android:text="@string/login" style="@style/ButtonText"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/numplate" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_above="@+id/locked_key" android:layout_centerHorizontal="true">
+            <TableLayout android:orientation="vertical" android:id="@+id/TableLayout01" android:background="@drawable/keyboard_bg" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TableRow android:gravity="center" android:id="@+id/TableRow01" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num01" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n1"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num02" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n2"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num03" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n3"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/TableRow02" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num04" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n4"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num05" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n5"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num06" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n6"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/TableRow02" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num07" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n7"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num08" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n8"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num09" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginRight="0dp" android:text="@string/n9"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/TableRow02" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num_clean" android:background="@drawable/clean_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginTop="0dp" android:layout_marginRight="0dp"/>
+                    <Button android:textSize="32dp" android:textColor="#ada8a8" android:id="@+id/num0" android:background="@drawable/key_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginTop="0dp" android:layout_marginRight="0dp" android:text="@string/n0"/>
+                    <Button android:textSize="32dp" android:id="@+id/lockedscreen_cancel" android:background="@drawable/exit_selector" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="89dp" android:layout_height="43dp" android:layout_marginTop="0dp" android:layout_marginRight="0dp"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textColor="#c50202" android:id="@+id/locked_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

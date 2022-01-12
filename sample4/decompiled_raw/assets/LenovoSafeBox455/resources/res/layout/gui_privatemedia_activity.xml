@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_set"/>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:id="@+id/info_bar" android:background="@drawable/gui_info_bar" android:layout_width="match_parent" android:layout_height="24dp"/>
+    <RelativeLayout style="@style/NavPage">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_btninsert" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <Button android:textSize="20dp" android:textColor="#4a4a4a" android:id="@+id/btn_AddMedia" android:background="@drawable/green_btn" android:layout_width="136dp" android:layout_height="36dp" android:text="@string/addImage" android:layout_weight="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:id="@+id/layout_second" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:textSize="19dp" android:textColor="#ff0000" android:layout_gravity="center_vertical" android:id="@+id/btn_delete" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="5dp" android:layout_width="97dp" android:layout_height="wrap_content" android:text="@string/del_pri" android:drawableLeft="@drawable/dele_icon" android:layout_weight="1"/>
+                <ImageView android:background="#eeeeee" android:layout_width="10dp" android:layout_height="wrap_content"/>
+                <Button android:textSize="19dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_selectAll" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="5dp" android:layout_width="97dp" android:layout_height="wrap_content" android:text="@string/selectAll" android:drawableLeft="@drawable/select_all_icon" android:layout_weight="1"/>
+                <ImageView android:background="#eeeeee" android:layout_width="10dp" android:layout_height="wrap_content"/>
+                <Button android:textSize="19dp" android:textColor="#4a4a4a" android:layout_gravity="center_vertical" android:id="@+id/btn_restore" android:background="@drawable/gui_mybtn_bottom_selector" android:paddingLeft="5dp" android:layout_width="97dp" android:layout_height="wrap_content" android:text="@string/restore" android:drawableLeft="@drawable/restore_icon" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_gridview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_btninsert">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_Null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-6dp" android:layout_marginBottom="-6dp"/>
+            <FrameLayout android:id="@+id/grid_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+                <GridView android:gravity="center" android:id="@+id/gridview" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="7dp" android:verticalSpacing="7dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

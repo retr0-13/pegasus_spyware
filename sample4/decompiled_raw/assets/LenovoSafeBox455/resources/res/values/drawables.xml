@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="white">#696969</drawable>
+    <drawable name="gole">#ffd700</drawable>
+    <drawable name="black">#050505</drawable>
+    <drawable name="red">#ee3b3b</drawable>
+</resources>

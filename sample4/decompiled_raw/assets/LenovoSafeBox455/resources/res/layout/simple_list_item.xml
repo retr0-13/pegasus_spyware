@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/DialogListText" android:textColor="@color/black1" android:gravity="center_vertical" android:id="@+id/text1" android:paddingLeft="3dp" android:layout_width="match_parent" android:layout_height="50dp"/>

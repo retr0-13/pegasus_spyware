@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">(4x1)LeSafe Widget</string>
+    <string name="widget_4X1">(4x1)LeSafe Widget</string>
+    <string name="mem_refresh">Refresh</string>
+    <string name="mem_clear">Clean All</string>
+    <string name="leem_center">LeemCenter</string>
+    <string name="save_center">LeSafe</string>
+    <string name="memory">Used Memory</string>
+    <string name="toast_mem_no">No process to clean up</string>
+    <string name="toast_mem_show">Closed %1$d APPs and released %2$dMB memory</string>
+    <string name="no_lesafe_app">Please download Lesafe Apk in market</string>
+    <string name="ok_btn">Ok</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="stop_lesafe_app">You can launcher LeSafe in Settings</string>
+    <string name="if_download_lesafe">LeSafe provides more comprehensive mobile security service. Download it？</string>
+    <string name="app_no_app_to_clear">No apps</string>
+    <string name="app_is_fine">In Optimal State</string>
+    <string name="app_kill">End</string>
+    <string name="app_number">app(s)</string>
+    <string name="is_in_clear">Cleaning up...</string>
+    <string name="no_browser">No Browser in your phone</string>
+</resources>

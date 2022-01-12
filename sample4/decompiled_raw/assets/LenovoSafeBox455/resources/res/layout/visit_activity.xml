@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:layout_gravity="center" android:id="@+id/info_bar" android:background="@drawable/gui_info_bar" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/hide_private_info"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="15dp" android:textColor="#4a4a4a" android:paddingLeft="20dp" android:layout_width="220dp" android:layout_height="wrap_content" android:text="@string/private_info_prompt"/>
+        <ImageView android:id="@+id/hide_info_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/btn_on" android:onClick="true"/>
+    </LinearLayout>
+    <TextView android:textSize="13dp" android:textColor="#7a7a7a" android:layout_gravity="center" android:id="@+id/locked_info_bar" android:background="@drawable/gui_info_bar" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/lock_app_info"/>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/widget196" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+        <ListView android:id="@+id/selectapp_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#eeeeee" android:dividerHeight="2px" android:layout_below="@+id/info_bar"/>
+    </RelativeLayout>
+</LinearLayout>

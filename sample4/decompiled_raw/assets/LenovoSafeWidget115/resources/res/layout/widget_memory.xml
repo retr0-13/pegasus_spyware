@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@drawable/mem4x1_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mem_icon" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp">
+        <ImageView android:id="@+id/mem_safecenter" android:background="@drawable/icon" android:layout_width="50dp" android:layout_height="50dp"/>
+        <TextView android:textSize="15dp" android:textColor="#454545" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="2dp" android:text="@string/save_center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/apps" android:background="@drawable/mem4x1_app_background" android:layout_width="154dp" android:layout_height="58dp" android:layout_toRightOf="@+id/mem_icon">
+        <TextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/apps_text" android:background="@drawable/mem4x1_app_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/toast_mem_no"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="1dp">
+            <ImageView android:id="@+id/image00" android:layout_width="26dp" android:layout_height="26dp"/>
+            <ImageView android:id="@+id/image01" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image02" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image03" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image04" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="2dp">
+            <ImageView android:id="@+id/image05" android:layout_width="26dp" android:layout_height="26dp"/>
+            <ImageView android:id="@+id/image06" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image07" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image08" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+            <ImageView android:id="@+id/image09" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/refreshBtn" android:background="@drawable/mem4x1_refresh" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginLeft="5dp" android:minWidth="80dp" android:layout_toRightOf="@+id/apps" android:layout_alignTop="@+id/apps">
+        <TextView android:textSize="16sp" android:textColor="#7a7a7a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mem_refresh" android:singleLine="true"/>
+    </LinearLayout>
+    <Button android:textSize="16sp" android:textColor="#006500" android:ellipsize="start" android:id="@+id/clearBtn" android:background="@drawable/mem4x1_clean" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_marginTop="9dp" android:minWidth="80dp" android:text="@string/mem_clear" android:singleLine="true" android:layout_toRightOf="@+id/apps" android:layout_below="@+id/refreshBtn"/>
+    <TextView android:textSize="8dp" android:textColor="#454545" android:id="@+id/progressbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/apps" android:layout_alignLeft="@+id/apps"/>
+    <TextView android:textSize="8dp" android:textColor="#454545" android:id="@+id/progressbar_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/apps" android:layout_alignRight="@+id/apps"/>
+    <ProgressBar android:id="@+id/progressbar" android:layout_width="154dp" android:layout_height="7dp" android:progressDrawable="@drawable/mem4x1_progress_bg" android:layout_below="@+id/progressbar_text" android:layout_alignLeft="@+id/apps" style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>
